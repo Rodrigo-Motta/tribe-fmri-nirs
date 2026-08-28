@@ -1,0 +1,15 @@
+type,start,duration,timeline,subject,session,task,run,filepath,frequency,offset,stop
+Audio,0.0,60.0,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.wav,44100.0,0.0,60.0
+Video,0.0,60.0,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.mp4,25.0,0.0,60.0
+Audio,60.0,60.0,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.wav,44100.0,60.0,120.0
+Video,60.0,60.0,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.mp4,25.0,60.0,120.0
+Audio,120.0,60.0,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.wav,44100.0,120.0,180.0
+Video,120.0,60.0,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.mp4,25.0,120.0,180.0
+Audio,180.0,60.0,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.wav,44100.0,180.0,240.0
+Video,180.0,60.0,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.mp4,25.0,180.0,240.0
+Audio,240.0,60.0,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.wav,44100.0,240.0,300.0
+Video,240.0,60.0,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.mp4,25.0,240.0,300.0
+Audio,300.0,60.0,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.wav,44100.0,300.0,360.0
+Video,300.0,60.0,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.mp4,25.0,300.0,360.0
+Audio,360.0,75.69999999999999,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.wav,44100.0,360.0,435.7
+Video,360.0,75.69999999999999,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.mp4,25.0,360.0,435.7

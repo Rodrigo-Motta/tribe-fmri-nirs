@@ -1,0 +1,53 @@
+{
+  "batches": 5,
+  "modalities": {
+    "audio": {
+      "shape": [
+        1000,
+        2,
+        1024
+      ],
+      "raw_shape": [
+        1,
+        2,
+        1024,
+        1000
+      ]
+    },
+    "video": {
+      "shape": [
+        1000,
+        2,
+        1408
+      ],
+      "raw_shape": [
+        1,
+        2,
+        1408,
+        1000
+      ]
+    }
+  },
+  "device": "mps",
+  "extractors": {
+    "text": {
+      "name": "HuggingFaceText",
+      "frequency": 2.0,
+      "layer_aggregation": "group_mean",
+      "image_model": null
+    },
+    "audio": {
+      "name": "Wav2VecBert",
+      "frequency": 2.0,
+      "layer_aggregation": "group_mean",
+      "image_model": null
+    },
+    "video": {
+      "name": "HuggingFaceVideo",
+      "frequency": 2.0,
+      "layer_aggregation": null,
+      "image_model": "facebook/vjepa2-vitg-fpc64-256"
+    }
+  },
+  "timings_s": 1.9
+}

@@ -14,18 +14,13 @@ wheels/
 .env.*
 !.env.example
 
-# TRIBE v2 outputs (regenerable, large)
-output/
+# TRIBE v2 feature cache (regenerable internal pickle format, large)
 cache/
 stimulus/*.wav
 stimulus/*.tsv
 
-# Stimulus media (large; keep out of git, share via other means)
-stimulus/*.mp4
-stimulus/*.avi
-stimulus/*.mkv
-stimulus/*.mov
-stimulus/*.webm
+# Stimulus video IS committed (50MB, under GitHub limit)
+# stimulus/*.mp4 intentionally tracked
 
 # OS / editor
 .DS_Store

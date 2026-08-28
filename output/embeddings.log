@@ -1,0 +1,34 @@
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 15:27:12 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+15:27:12 INFO extract_embeddings: Loading model (features will load from cache)...
+15:27:12 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/tribev2/resolve/main/config.yaml "HTTP/1.1 307 Temporary Redirect"
+15:27:12 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/tribev2/f894e783020944dcd96e5568550afe2aa9743f9f/config.yaml "HTTP/1.1 200 OK"
+15:27:12 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/tribev2/resolve/main/best.ckpt "HTTP/1.1 302 Found"
+2026-08-28 15:27:12 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+15:27:12 WARNING neuralset.extractors.base: Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+INFO - Loading model from ~/.cache/huggingface/hub/models--facebook--tribev2/snapshots/f894e783020944dcd96e5568550afe2aa9743f9f/best.ckpt
+15:27:12 INFO tribev2.demo_utils: Loading model from ~/.cache/huggingface/hub/models--facebook--tribev2/snapshots/f894e783020944dcd96e5568550afe2aa9743f9f/best.ckpt
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/x_transformers/x_transformers.py:439: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/x_transformers/x_transformers.py:461: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+Extract audio from video events:   0%|          | 0/1 [00:00<?, ?it/s]Extract audio from video events: 100%|██████████| 1/1 [00:00<00:00, 1937.32it/s]
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/events/utils.py:134: UserWarning: The events dataframe contains an `Index` column. This is dangerous, please add drop=True in calls to df.reset_index(). Dropping it automatically.
+  warnings.warn(msg)
+[15:27:13 WARNING] Removing extractor text as there are no corresponding events
+15:27:13 WARNING tribev2.main: Removing extractor text as there are no corresponding events
+[15:27:13 INFO] Preparing extractor: audio
+15:27:13 INFO tribev2.main: Preparing extractor: audio
+[15:27:13 INFO] Preparing extractor: video
+15:27:13 INFO tribev2.main: Preparing extractor: video
+[15:27:14 INFO] Preparing extractor: subject_id
+15:27:14 INFO tribev2.main: Preparing extractor: subject_id
+2026-08-28 15:27:14 - WARNING - neuralset.extractors.base:824 - LabelEncoder has only found one label: {'default'}. This was probably not intended.
+15:27:14 WARNING neuralset.extractors.base: LabelEncoder has only found one label: {'default'}. This was probably not intended.
+[15:27:14 INFO] Building dataloader for split all
+15:27:14 INFO tribev2.main: Building dataloader for split all
+15:27:14 INFO extract_embeddings: Loader built. Iterating batches to stack cached features...
+15:27:14 INFO extract_embeddings: audio features: (1000, 2, 1024) -> saved
+15:27:14 INFO extract_embeddings: video features: (1000, 2, 1408) -> saved
+15:27:14 INFO extract_embeddings: Done in 1.9s. Outputs in ~/Documents/Projects/tribe-fmri-fnirs/output/embeddings

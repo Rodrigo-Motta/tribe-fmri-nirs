@@ -1,0 +1,25 @@
+{
+  "stimulus": "~/Documents/Projects/tribe-fmri-fnirs/stimulus/video_with_audio.mp4",
+  "stimulus_duration_s": 435.699229,
+  "model": "facebook/tribev2",
+  "device": "mps:0",
+  "n_timesteps": 436,
+  "n_vertices": 20484,
+  "TR_s": 1.0,
+  "hemodynamic_lag_s": 5,
+  "mesh": "fsaverage5",
+  "note": "Predictions are offset 5s in the past to compensate for the hemodynamic lag.",
+  "n_events_rows": 14,
+  "timings_s": {
+    "load": 4943.8,
+    "events": 4941.9,
+    "predict": 4941.4,
+    "total": 4943.8
+  },
+  "files": [
+    "events.csv",
+    "predictions.npy",
+    "run.log",
+    "segments.csv"
+  ]
+}
