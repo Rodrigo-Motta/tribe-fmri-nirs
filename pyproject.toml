@@ -1,0 +1,12 @@
+[project]
+name = "tribe-fmri-fnirs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "tribev2[plotting]",
+]
+
+[tool.uv.sources]
+tribev2 = { git = "https://github.com/facebookresearch/tribev2.git" }

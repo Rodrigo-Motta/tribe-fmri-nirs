@@ -1,0 +1,36 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets — NEVER commit HuggingFace tokens or credentials
+.env
+.env.*
+!.env.example
+
+# TRIBE v2 outputs (regenerable, large)
+output/
+cache/
+stimulus/*.wav
+stimulus/*.tsv
+
+# Stimulus media (large; keep out of git, share via other means)
+stimulus/*.mp4
+stimulus/*.avi
+stimulus/*.mkv
+stimulus/*.mov
+stimulus/*.webm
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# uv lock is fine to keep (uv.lock)
