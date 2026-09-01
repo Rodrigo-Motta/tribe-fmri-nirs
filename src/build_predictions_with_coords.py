@@ -25,7 +25,7 @@ import numpy as np
 from nilearn import datasets
 import nibabel as nib
 
-OUT = Path(__file__).parent / "output"
+OUT = Path(__file__).resolve().parents[1] / "output"
 TR_S = 1.0          # seconds per timestep (from run_info.json)
 N_VERTICES = 20484
 

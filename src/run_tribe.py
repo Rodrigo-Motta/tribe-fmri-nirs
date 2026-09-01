@@ -1,13 +1,22 @@
-"""Run TRIBE v2 on the project stimulus video and save predictions.
+"""Run TRIBE v2 on a stimulus video and save fMRI predictions.
 
 Usage:
-    # default device (auto -> CPU on this machine, MPS available)
-    python run_tribe.py
+    # default stimulus (stimulus/video_with_audio.mp4), auto device
+    python src/run_tribe.py
 
-    # force a device, e.g. Apple Silicon GPU
-    TRIBE_DEVICE=mps python run_tribe.py
+    # use a different video (absolute or project-relative path)
+    TRIBE_STIMULUS=stimulus/my_video.mp4 python src/run_tribe.py
+    python src/run_tribe.py --stimulus stimulus/my_video.mp4
 
-Outputs are written to ./output/:
+    # force a device: mps (Apple Silicon), cuda (NVIDIA), or cpu
+    TRIBE_DEVICE=mps  python src/run_tribe.py
+    TRIBE_DEVICE=cuda python src/run_tribe.py
+    TRIBE_DEVICE=cpu  python src/run_tribe.py
+
+    # custom output directory (default: output/)
+    TRIBE_OUTPUT=output_my_run python src/run_tribe.py
+
+Outputs are written to ./output/ (or $TRIBE_OUTPUT):
     - predictions.npy            : (n_timesteps, n_vertices) brain predictions
     - segments.csv               : per-timestep segment metadata
     - events.csv                 : full events dataframe (audio/video/words/...)
@@ -30,7 +39,7 @@ import pandas as pd
 import torch
 
 # --- load .env (HF_KEY) into the environment ---------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parent
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 ENV_PATH = PROJECT_ROOT / ".env"
 if ENV_PATH.exists():
     for line in ENV_PATH.read_text().splitlines():
@@ -180,12 +189,24 @@ def build_segments_metadata(segments: list, tr: float) -> pd.DataFrame:
 def main() -> int:
     t0 = time.time()
 
-    video_path = PROJECT_ROOT / "stimulus" / "video_with_audio.mp4"
+    # --- stimulus path: CLI arg > env var > default -------------------------
+    default_stim = PROJECT_ROOT / "stimulus" / "video_with_audio.mp4"
+    stim_arg = None
+    if len(sys.argv) > 1 and sys.argv[1] not in ("-h", "--help"):
+        stim_arg = sys.argv[1]
+    stim_env = os.environ.get("TRIBE_STIMULUS")
+    stim_str = stim_arg or stim_env or str(default_stim)
+    video_path = Path(stim_str)
+    if not video_path.is_absolute():
+        video_path = PROJECT_ROOT / video_path
     if not video_path.is_file():
         log.error("Stimulus video not found: %s", video_path)
+        log.error("Set TRIBE_STIMULUS or pass the path as an argument.")
         return 2
 
-    out_dir = PROJECT_ROOT / "output"
+    out_dir = Path(os.environ.get("TRIBE_OUTPUT", PROJECT_ROOT / "output"))
+    if not out_dir.is_absolute():
+        out_dir = PROJECT_ROOT / out_dir
     cache_dir = PROJECT_ROOT / "cache"
     out_dir.mkdir(parents=True, exist_ok=True)
     cache_dir.mkdir(parents=True, exist_ok=True)
@@ -268,9 +289,17 @@ def main() -> int:
     seg_df = build_segments_metadata(segments, tr)
     seg_df.to_csv(out_dir / "segments.csv", index=False)
 
+    # compute actual stimulus duration from the events dataframe
+    try:
+        from moviepy.editor import VideoFileClip
+        dur = VideoFileClip(str(video_path)).duration
+    except Exception:
+        # fall back to last event stop time
+        dur = float(df["stop"].max()) if "stop" in df.columns else None
+
     run_info = {
         "stimulus": str(video_path),
-        "stimulus_duration_s": 435.699229,
+        "stimulus_duration_s": dur,
         "model": "facebook/tribev2",
         "device": str(getattr(model, "_model", None).device if getattr(model, "_model", None) is not None else device),
         "n_timesteps": int(preds.shape[0]),
