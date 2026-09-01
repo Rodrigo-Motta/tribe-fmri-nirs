@@ -24,7 +24,7 @@ import nibabel as nib
 import numpy as np
 from nilearn import datasets
 
-OUT = Path(__file__).parent / "output"
+OUT = Path(__file__).resolve().parents[1] / "output"
 OUT.mkdir(exist_ok=True)
 
 # ---- load fsaverage5 mesh (ships with nilearn, ~5MB) -----------------------

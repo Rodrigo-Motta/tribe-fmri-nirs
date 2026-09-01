@@ -41,7 +41,7 @@ is required. The token is stored in `.env`:
 HF_KEY=hf_...
 ```
 
-`run_tribe.py` loads `.env` and exports it as `HF_TOKEN` / `HUGGING_FACE_HUB_TOKEN` so
+`src/run_tribe.py` loads `.env` and exports it as `HF_TOKEN` / `HUGGING_FACE_HUB_TOKEN` so
 that `huggingface_hub` and `transformers` can download both the TRIBE v2 checkpoint
 (`facebook/tribev2`, ~1 GB) and the feature-extractor backbones
 (`facebook/vjepa2-vitg-fpc64-256`, `facebook/w2v-bert-2.0`, `facebook/dinov2-large`).
@@ -59,7 +59,7 @@ You must have accepted the LLaMA-3.2 license on the HuggingFace model page.
 ## 2. Running the model
 
 ```bash
-python run_tribe.py
+python src/run_tribe.py
 ```
 
 Environment overrides:
@@ -72,7 +72,7 @@ All outputs go to `output/`; intermediate feature caches go to `cache/`.
 
 ---
 
-## 3. What the script does (`run_tribe.py`)
+## 3. What the script does (`src/run_tribe.py`)
 
 The script is a thin, self-contained inference wrapper around `tribev2.TribeModel`.
 It performs four steps:
@@ -124,14 +124,14 @@ for the "average" subject on the **fsaverage5** mesh and are offset 5 s in the p
 | `brain_preview.png`  | (optional) 12-timestep cortical surface preview, lateral view      |
 | `run.log`            | full stdout/stderr log                                             |
 
-### Step 5 — Save feature embeddings (optional, `extract_embeddings.py`)
+### Step 5 — Save feature embeddings (optional, `src/extract_embeddings.py`)
 
-The raw per-modality feature tensors are not saved by `run_tribe.py` (they only
+The raw per-modality feature tensors are not saved by `src/run_tribe.py` (they only
 live in exca's `cache/` pickle format). To dump them as clean `.npy` arrays, run
 **after** the main inference (it reuses the feature cache, so it's fast):
 
 ```bash
-python extract_embeddings.py
+python src/extract_embeddings.py
 ```
 
 | File                          | Description                                              |
@@ -145,7 +145,7 @@ python extract_embeddings.py
 
 ## 4. Hardware-specific adaptations (16 GB MacBook Air, Apple Silicon)
 
-Running TRIBE v2 on a 16 GB machine required four workarounds, all in `run_tribe.py`:
+Running TRIBE v2 on a 16 GB machine required four workarounds, all in `src/run_tribe.py`:
 
 ### 4a. fp16 on MPS
 
@@ -224,7 +224,7 @@ git clone <this repo> && cd tribe-fmri-fnirs
 uv sync                                   # restore the venv from pyproject.toml
 # put your HF token in .env  ->  HF_KEY=hf_xxx
 # put your stimulus at       ->  stimulus/video_with_audio.mp4
-python run_tribe.py
+python src/run_tribe.py
 ```
 
 ---

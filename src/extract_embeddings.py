@@ -28,7 +28,7 @@ import pandas as pd
 import torch
 
 # --- load .env ---------------------------------------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parent
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 ENV_PATH = PROJECT_ROOT / ".env"
 if ENV_PATH.exists():
     for line in ENV_PATH.read_text().splitlines():

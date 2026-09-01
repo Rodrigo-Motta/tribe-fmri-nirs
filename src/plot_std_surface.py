@@ -16,7 +16,7 @@ import pandas as pd
 
 from tribev2.plotting import PlotBrain
 
-PROJECT_ROOT = Path(__file__).resolve().parent
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CSV_PATH = PROJECT_ROOT / "std_brain" / "standard_deviations.csv"
 OUT_PATH = PROJECT_ROOT / "std_brain" / "std_surface.png"
 
