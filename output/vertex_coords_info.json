@@ -1,0 +1,15 @@
+{
+  "mesh": "fsaverage5",
+  "n_vertices": 20484,
+  "n_left": 10242,
+  "n_right": 10242,
+  "vertex_order": "left hemisphere [0:10242], then right [10242:20484]",
+  "coordinate_system": "FreeSurfer RAS (x=L\u2192R, y=P\u2192A, z=I\u2192S), millimeters",
+  "source": "nilearn.datasets.fetch_surf_fsaverage(mesh='fsaverage5')",
+  "surfaces_used": "white_left.gii.gz, white_right.gii.gz (white-matter surface)",
+  "files": [
+    "vertex_coords.npy",
+    "vertex_coords.csv"
+  ],
+  "matches_predictions": "predictions.npy shape[1] == 20484 \u2705"
+}

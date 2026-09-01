@@ -1,0 +1,69 @@
+======================================================================
+mPFC HYPOTHESIS TEST — neutral-video TRIBE predictions
+======================================================================
+
+Stimulus A: bumbo (neutral grey + bumbo audio)  (18, 20484)
+Stimulus B: bumboTarol (neutral grey + tarol audio)  (20, 20484)
+Difference map: |mean_bumbo - mean_tarol|  (max=0.10032, mean=0.01734)
+
+ROI-LEVEL RANKING (Schaefer 200, by mean |difference|):
+  Default network (mPFC hub proxy): 46 ROIs, mean rank 91.9/201, median 79, top-10: 0, top-20: 0
+  PFC-labeled Schaefer ROIs: 37 ROIs, mean rank 115.2/201, median 111, top-10: 0, top-20: 0
+  Top-1 ROI: 7Networks_RH_Vis_11 (network=Vis, |diff|=0.05367)
+
+VERTEX-LEVEL (Destrieux mPFC mask, 1214 vertices, 5.9% of cortex):
+  Mean |diff| inside mPFC:  0.01514
+  Mean |diff| outside mPFC: 0.01748
+  Ratio in/out:            0.866
+  Diff-mass fraction in mPFC: 0.0518 (enrichment 0.87x)
+
+NULL TEST (vertex-level, 5000 random same-sized samples):
+  Null mean |diff|:    0.01735  (p95: 0.01807)
+  mPFC mean |diff|:    0.01514
+  p-value (one-sided): 1.0000
+  => mPFC is NOT statistically enriched in differences (alpha=0.05)
+
+NULL TEST (ROI-level, Default network mean rank vs 10000 random subsets):
+  Default mean rank:   91.9/201
+  Null mean rank:      101.0
+  p-value (one-sided): 0.1147
+  => Default network ROIs do NOT rank significantly higher than chance
+
+VERDICT: does NOT support the mPFC hypothesis
+   - mPFC not enriched (ratio 0.87, p=1.0000)
+   - Default-network ROIs not significantly high-ranked (p=0.1147)
+
+Top-20 ROIs by |mean difference|:
+ rank                         name  network  mean_abs_diff  mean_signed_diff
+    1          7Networks_RH_Vis_11      Vis       0.053672          0.051320
+    2           7Networks_LH_Vis_3      Vis       0.046876          0.044892
+    3           7Networks_RH_Vis_3      Vis       0.042483          0.040711
+    4           7Networks_LH_Vis_8      Vis       0.039342          0.035984
+    5          7Networks_LH_Vis_11      Vis       0.039007          0.035720
+    6           7Networks_LH_Vis_2      Vis       0.037410          0.036150
+    7 7Networks_RH_DorsAttn_Post_2 DorsAttn       0.037075          0.036265
+    8 7Networks_RH_DorsAttn_Post_8 DorsAttn       0.036451          0.034699
+    9           7Networks_LH_Vis_9      Vis       0.035973          0.034141
+   10          7Networks_RH_Vis_15      Vis       0.035797          0.033362
+   11           7Networks_RH_Vis_5      Vis       0.034828          0.033293
+   12           7Networks_RH_Vis_8      Vis       0.034074          0.031870
+   13 7Networks_LH_DorsAttn_Post_2 DorsAttn       0.033693          0.031217
+   14          7Networks_LH_Vis_14      Vis       0.032951          0.031972
+   15 7Networks_RH_DorsAttn_Post_1 DorsAttn       0.032374          0.031156
+   16           7Networks_LH_Vis_1      Vis       0.031735          0.031263
+   17 7Networks_LH_DorsAttn_Post_8 DorsAttn       0.031054          0.028396
+   18 7Networks_RH_DorsAttn_Post_9 DorsAttn       0.029680          0.028573
+   19          7Networks_RH_Vis_14      Vis       0.029018          0.026459
+   20           7Networks_RH_Vis_2      Vis       0.028777          0.027218
+
+Network-level summary (mean |diff| averaged across ROIs in each network):
+                 mean  count
+network                     
+Vis          0.027883     29
+DorsAttn     0.024226     26
+Default      0.016541     46
+SomMot       0.013564     35
+Cont         0.013210     30
+SalVentAttn  0.012961     22
+Limbic       0.011886     12
+?            0.006958      1

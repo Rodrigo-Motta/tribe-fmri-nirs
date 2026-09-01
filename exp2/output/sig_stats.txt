@@ -1,0 +1,28 @@
+Per-vertex Welch t-test (bumbo TRs vs tarol TRs), FDR-corrected
+
+neutral p<0.05: 82 / 20484 sig vertices (0.40%)
+   Cont         17
+   Default      29
+   DorsAttn     10
+   Limbic       4
+   SalVentAttn  3
+   SomMot       10
+   Vis          9
+
+neutral p<0.01: 6 / 20484 sig vertices (0.03%)
+   Cont         1
+   Default      1
+   SalVentAttn  2
+   SomMot       1
+   Vis          1
+
+audio-only p<0.05: 1732 / 20484 sig vertices (8.46%)
+   ?            47
+   Cont         180
+   Default      458
+   DorsAttn     295
+   Limbic       80
+   SalVentAttn  135
+   SomMot       261
+   Vis          276
+

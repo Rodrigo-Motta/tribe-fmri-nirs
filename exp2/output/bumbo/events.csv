@@ -1,0 +1,3 @@
+type,start,duration,timeline,subject,session,task,run,filepath,frequency,offset,stop
+Audio,0.0,17.76,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/exp2/stimulus/bumbo_neutral.wav,44100.0,0.0,17.76
+Video,0.0,17.76,default,default,,,,~/Documents/Projects/tribe-fmri-fnirs/exp2/stimulus/bumbo_neutral.mp4,25.0,0.0,17.76

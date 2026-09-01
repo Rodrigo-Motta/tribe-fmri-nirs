@@ -1,0 +1,231 @@
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:34 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+16:05:34 INFO exp2: Audio targets: ['bumbo.aifc', 'bumboTarol.aifc']
+16:05:34 INFO exp2: Device: mps (MPS=True, dtype=torch.float16)
+16:05:34 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/tribev2/resolve/main/config.yaml "HTTP/1.1 307 Temporary Redirect"
+16:05:35 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/tribev2/f894e783020944dcd96e5568550afe2aa9743f9f/config.yaml "HTTP/1.1 200 OK"
+16:05:35 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/tribev2/resolve/main/best.ckpt "HTTP/1.1 302 Found"
+2026-08-28 16:05:35 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+16:05:35 WARNING neuralset.extractors.base: Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+INFO - Loading model from ~/.cache/huggingface/hub/models--facebook--tribev2/snapshots/f894e783020944dcd96e5568550afe2aa9743f9f/best.ckpt
+16:05:35 INFO tribev2.demo_utils: Loading model from ~/.cache/huggingface/hub/models--facebook--tribev2/snapshots/f894e783020944dcd96e5568550afe2aa9743f9f/best.ckpt
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/x_transformers/x_transformers.py:439: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/x_transformers/x_transformers.py:461: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+16:05:36 INFO exp2: Model loaded in 1.9s
+16:05:36 INFO exp2: === Running TRIBE on bumbo.aifc ===
+16:05:36 INFO exp2: Events built (1 rows)
+[16:05:36 WARNING] Removing extractor video as there are no corresponding events
+16:05:36 WARNING tribev2.main: Removing extractor video as there are no corresponding events
+[16:05:36 WARNING] Removing extractor text as there are no corresponding events
+16:05:36 WARNING tribev2.main: Removing extractor text as there are no corresponding events
+[16:05:36 INFO] Preparing extractor: audio
+16:05:36 INFO tribev2.main: Preparing extractor: audio
+[16:05:36 INFO] Preparing extractor: subject_id
+16:05:36 INFO tribev2.main: Preparing extractor: subject_id
+2026-08-28 16:05:36 - WARNING - neuralset.extractors.base:824 - LabelEncoder has only found one label: {'default'}. This was probably not intended.
+16:05:36 WARNING neuralset.extractors.base: LabelEncoder has only found one label: {'default'}. This was probably not intended.
+[16:05:36 INFO] Building dataloader for split all
+16:05:36 INFO tribev2.main: Building dataloader for split all
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:624: UserWarning: This DataLoader will create 20 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+  0%|          | 0/1 [00:00<?, ?it/s]~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:50 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:05:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+100%|██████████| 1/1 [00:18<00:00, 18.55s/it]100%|██████████| 1/1 [00:22<00:00, 22.68s/it]
+INFO - Predicted 16 / 100 segments (16.0% kept)
+16:05:59 INFO tribev2.demo_utils: Predicted 16 / 100 segments (16.0% kept)
+16:05:59 INFO exp2: Inference done in 22.9s — predictions (16, 20484)
+16:05:59 INFO exp2: Saved outputs to ~/Documents/Projects/tribe-fmri-fnirs/exp2/output/bumbo
+16:05:59 INFO exp2: === Running TRIBE on bumboTarol.aifc ===
+16:05:59 INFO exp2: Events built (1 rows)
+[16:05:59 WARNING] Removing extractor video as there are no corresponding events
+16:05:59 WARNING tribev2.main: Removing extractor video as there are no corresponding events
+[16:05:59 WARNING] Removing extractor text as there are no corresponding events
+16:05:59 WARNING tribev2.main: Removing extractor text as there are no corresponding events
+[16:05:59 INFO] Preparing extractor: audio
+16:05:59 INFO tribev2.main: Preparing extractor: audio
+16:05:59 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+16:06:00 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+16:06:00 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/w2v-bert-2.0/da985ba0987f70aaeb84a80f2851cfac8c697a7b/preprocessor_config.json "HTTP/1.1 200 OK"
+16:06:00 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+16:06:00 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+16:06:01 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/w2v-bert-2.0/da985ba0987f70aaeb84a80f2851cfac8c697a7b/preprocessor_config.json "HTTP/1.1 200 OK"
+16:06:01 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+16:06:01 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/w2v-bert-2.0/da985ba0987f70aaeb84a80f2851cfac8c697a7b/config.json "HTTP/1.1 200 OK"
+16:06:01 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+Loading weights:   0%|          | 0/773 [00:00<?, ?it/s]Loading weights: 100%|██████████| 773/773 [00:00<00:00, 9487.13it/s]
+[16:06:05 INFO] Preparing extractor: subject_id
+16:06:05 INFO tribev2.main: Preparing extractor: subject_id
+2026-08-28 16:06:05 - WARNING - neuralset.extractors.base:824 - LabelEncoder has only found one label: {'default'}. This was probably not intended.
+16:06:05 WARNING neuralset.extractors.base: LabelEncoder has only found one label: {'default'}. This was probably not intended.
+[16:06:05 INFO] Building dataloader for split all
+16:06:05 INFO tribev2.main: Building dataloader for split all
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:624: UserWarning: This DataLoader will create 20 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+  0%|          | 0/1 [00:00<?, ?it/s]~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:09 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:12 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:16 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:19 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:23 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:26 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:29 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:33 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:36 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:40 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:44 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:47 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:51 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:54 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:06:57 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:07:00 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:07:04 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:07:07 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:07:11 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:07:14 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+100%|██████████| 1/1 [01:09<00:00, 69.81s/it]100%|██████████| 1/1 [01:19<00:00, 79.72s/it]
+INFO - Predicted 17 / 100 segments (17.0% kept)
+16:07:24 INFO tribev2.demo_utils: Predicted 17 / 100 segments (17.0% kept)
+16:07:24 INFO exp2: Inference done in 85.5s — predictions (17, 20484)
+16:07:24 INFO exp2: Saved outputs to ~/Documents/Projects/tribe-fmri-fnirs/exp2/output/bumboTarol
+16:07:24 INFO exp2: All done in 110.3s
