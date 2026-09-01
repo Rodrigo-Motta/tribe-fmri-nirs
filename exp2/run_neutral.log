@@ -1,0 +1,286 @@
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:17:53 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+16:17:53 INFO exp2-neutral: Neutral-video targets: ['bumboTarol_neutral.mp4', 'bumbo_neutral.mp4']
+16:17:53 INFO exp2-neutral: Device: mps (MPS=True, dtype=torch.float16)
+16:17:53 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/tribev2/resolve/main/config.yaml "HTTP/1.1 307 Temporary Redirect"
+16:17:53 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/tribev2/f894e783020944dcd96e5568550afe2aa9743f9f/config.yaml "HTTP/1.1 200 OK"
+16:17:53 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/tribev2/resolve/main/best.ckpt "HTTP/1.1 302 Found"
+2026-08-28 16:17:53 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+16:17:53 WARNING neuralset.extractors.base: Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+INFO - Loading model from ~/.cache/huggingface/hub/models--facebook--tribev2/snapshots/f894e783020944dcd96e5568550afe2aa9743f9f/best.ckpt
+16:17:53 INFO tribev2.demo_utils: Loading model from ~/.cache/huggingface/hub/models--facebook--tribev2/snapshots/f894e783020944dcd96e5568550afe2aa9743f9f/best.ckpt
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/x_transformers/x_transformers.py:439: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/x_transformers/x_transformers.py:461: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled = False)
+16:17:54 INFO exp2-neutral: Model loaded in 1.7s
+16:17:54 INFO exp2-neutral: === TRIBE on bumboTarol_neutral.mp4 ===
+Extract audio from video events:   0%|          | 0/1 [00:00<?, ?it/s]                                                                      Extract audio from video events:   0%|          | 0/1 [00:00<?, ?it/s]MoviePy - Writing audio in ~/Documents/Projects/tribe-fmri-fnirs/exp2/stimulus/bumboTarol_neutral.wav
+
+chunk:   0%|          | 0/422 [00:00<?, ?it/s, now=None][A
+                                                        [A                                                                      Extract audio from video events:   0%|          | 0/1 [00:00<?, ?it/s]Extract audio from video events: 100%|██████████| 1/1 [00:00<00:00,  9.02it/s]Extract audio from video events: 100%|██████████| 1/1 [00:00<00:00,  9.01it/s]
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/events/utils.py:134: UserWarning: The events dataframe contains an `Index` column. This is dangerous, please add drop=True in calls to df.reset_index(). Dropping it automatically.
+  warnings.warn(msg)
+16:17:55 INFO exp2-neutral: Events built (2 rows)
+[16:17:55 WARNING] Removing extractor text as there are no corresponding events
+16:17:55 WARNING tribev2.main: Removing extractor text as there are no corresponding events
+[16:17:55 INFO] Preparing extractor: audio
+16:17:55 INFO tribev2.main: Preparing extractor: audio
+16:17:55 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+16:17:55 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+16:17:55 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/w2v-bert-2.0/da985ba0987f70aaeb84a80f2851cfac8c697a7b/preprocessor_config.json "HTTP/1.1 200 OK"
+16:17:55 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+16:17:55 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+16:17:55 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/w2v-bert-2.0/da985ba0987f70aaeb84a80f2851cfac8c697a7b/preprocessor_config.json "HTTP/1.1 200 OK"
+16:17:56 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+16:17:56 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/w2v-bert-2.0/da985ba0987f70aaeb84a80f2851cfac8c697a7b/config.json "HTTP/1.1 200 OK"
+16:17:56 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+MoviePy - Done.
+Loading weights:   0%|          | 0/773 [00:00<?, ?it/s]Loading weights: 100%|██████████| 773/773 [00:00<00:00, 8953.67it/s]
+[16:17:59 INFO] Preparing extractor: video
+16:17:59 INFO tribev2.main: Preparing extractor: video
+16:18:00 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+16:18:00 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/vjepa2-vitg-fpc64-256/875c192b7b704b87d1e1d99345769632dd5f739a/config.json "HTTP/1.1 200 OK"
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/843 [00:00<?, ?it/s]Loading weights:   3%|▎         | 28/843 [00:00<00:03, 271.08it/s]Loading weights:   9%|▉         | 76/843 [00:00<00:02, 304.30it/s]Loading weights:  13%|█▎        | 108/843 [00:00<00:02, 263.01it/s]Loading weights:  17%|█▋        | 140/843 [00:00<00:02, 235.73it/s]Loading weights:  19%|█▉        | 164/843 [00:00<00:03, 194.22it/s]Loading weights:  22%|██▏       | 185/843 [00:00<00:04, 143.08it/s]Loading weights:  24%|██▍       | 206/843 [00:01<00:04, 156.07it/s]Loading weights:  28%|██▊       | 236/843 [00:01<00:04, 145.49it/s]Loading weights:  32%|███▏      | 268/843 [00:01<00:03, 163.80it/s]Loading weights:  36%|███▌      | 300/843 [00:01<00:03, 172.80it/s]Loading weights:  39%|███▉      | 332/843 [00:01<00:02, 176.69it/s]Loading weights:  43%|████▎     | 364/843 [00:02<00:02, 171.54it/s]Loading weights:  47%|████▋     | 396/843 [00:02<00:02, 189.72it/s]Loading weights:  51%|█████     | 428/843 [00:02<00:02, 200.45it/s]Loading weights:  55%|█████▍    | 460/843 [00:02<00:01, 221.49it/s]Loading weights:  58%|█████▊    | 492/843 [00:02<00:01, 229.97it/s]Loading weights:  62%|██████▏   | 524/843 [00:02<00:01, 222.14it/s]Loading weights:  66%|██████▌   | 556/843 [00:02<00:01, 197.20it/s]Loading weights:  68%|██████▊   | 577/843 [00:02<00:01, 198.75it/s]Loading weights:  71%|███████   | 598/843 [00:03<00:01, 189.03it/s]Loading weights:  74%|███████▎  | 620/843 [00:03<00:01, 137.54it/s]Loading weights:  75%|███████▌  | 636/843 [00:03<00:01, 129.73it/s]Loading weights: 100%|██████████| 843/843 [00:03<00:00, 516.57it/s]Loading weights: 100%|██████████| 843/843 [00:03<00:00, 231.52it/s]
+16:18:04 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+16:18:04 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+16:18:04 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/vjepa2-vitg-fpc64-256/875c192b7b704b87d1e1d99345769632dd5f739a/video_preprocessor_config.json "HTTP/1.1 200 OK"
+16:18:04 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+16:18:04 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+16:18:05 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+16:18:05 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/vjepa2-vitg-fpc64-256/875c192b7b704b87d1e1d99345769632dd5f739a/video_preprocessor_config.json "HTTP/1.1 200 OK"
+16:18:05 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-28 16:18:06 - DEBUG - neuralset.extractors.video:277 - Loaded Video (duration 19.12s at 25.0fps, shape (320, 240)):
+~/Documents/Projects/tribe-fmri-fnirs/exp2/stimulus/bumboTarol_neutral.mp4
+16:18:06 DEBUG neuralset.extractors.video: Loaded Video (duration 19.12s at 25.0fps, shape (320, 240)):
+~/Documents/Projects/tribe-fmri-fnirs/exp2/stimulus/bumboTarol_neutral.mp4
+Encoding video:   0%|          | 0/38 [00:00<?, ?it/s]2026-08-28 16:18:09 - DEBUG - neuralset.extractors.video:311 - Created Tensor with size (38, 20, 1408)
+16:18:09 DEBUG neuralset.extractors.video: Created Tensor with size (38, 20, 1408)
+Encoding video:   3%|▎         | 1/38 [00:02<01:44,  2.82s/it]Encoding video:   5%|▌         | 2/38 [00:05<01:39,  2.75s/it]Encoding video:   8%|▊         | 3/38 [00:08<01:34,  2.70s/it]Encoding video:  11%|█         | 4/38 [00:11<01:34,  2.78s/it]Encoding video:  13%|█▎        | 5/38 [00:13<01:33,  2.83s/it]Encoding video:  16%|█▌        | 6/38 [00:16<01:29,  2.80s/it]Encoding video:  18%|█▊        | 7/38 [00:19<01:27,  2.83s/it]Encoding video:  21%|██        | 8/38 [00:22<01:25,  2.86s/it]Encoding video:  24%|██▎       | 9/38 [00:25<01:23,  2.88s/it]Encoding video:  26%|██▋       | 10/38 [00:28<01:20,  2.88s/it]Encoding video:  29%|██▉       | 11/38 [00:31<01:17,  2.87s/it]Encoding video:  32%|███▏      | 12/38 [00:34<01:15,  2.89s/it]Encoding video:  34%|███▍      | 13/38 [00:37<01:12,  2.90s/it]Encoding video:  37%|███▋      | 14/38 [00:39<01:09,  2.91s/it]Encoding video:  39%|███▉      | 15/38 [00:42<01:07,  2.92s/it]Encoding video:  42%|████▏     | 16/38 [00:45<01:04,  2.93s/it]Encoding video:  45%|████▍     | 17/38 [00:48<01:02,  2.96s/it]Encoding video:  47%|████▋     | 18/38 [00:51<00:59,  2.99s/it]Encoding video:  50%|█████     | 19/38 [00:54<00:56,  3.00s/it]Encoding video:  53%|█████▎    | 20/38 [00:57<00:54,  3.00s/it]Encoding video:  55%|█████▌    | 21/38 [01:01<00:51,  3.02s/it]Encoding video:  58%|█████▊    | 22/38 [01:04<00:48,  3.02s/it]Encoding video:  61%|██████    | 23/38 [01:07<00:45,  3.02s/it]Encoding video:  63%|██████▎   | 24/38 [01:10<00:42,  3.03s/it]Encoding video:  66%|██████▌   | 25/38 [01:13<00:39,  3.06s/it]Encoding video:  68%|██████▊   | 26/38 [01:16<00:36,  3.08s/it]Encoding video:  71%|███████   | 27/38 [01:19<00:33,  3.07s/it]Encoding video:  74%|███████▎  | 28/38 [01:22<00:30,  3.07s/it]Encoding video:  76%|███████▋  | 29/38 [01:26<00:28,  3.22s/it]Encoding video:  79%|███████▉  | 30/38 [01:29<00:26,  3.30s/it]Encoding video:  82%|████████▏ | 31/38 [01:33<00:23,  3.41s/it]Encoding video:  84%|████████▍ | 32/38 [01:37<00:21,  3.53s/it]Encoding video:  87%|████████▋ | 33/38 [01:41<00:18,  3.66s/it]Encoding video:  89%|████████▉ | 34/38 [01:45<00:15,  3.89s/it]Encoding video:  92%|█████████▏| 35/38 [01:50<00:12,  4.17s/it]Encoding video:  95%|█████████▍| 36/38 [01:55<00:08,  4.37s/it]Encoding video:  97%|█████████▋| 37/38 [01:59<00:04,  4.51s/it]Encoding video: 100%|██████████| 38/38 [02:04<00:00,  4.58s/it]Encoding video: 100%|██████████| 38/38 [02:04<00:00,  3.28s/it]
+[16:20:11 INFO] Preparing extractor: subject_id
+16:20:11 INFO tribev2.main: Preparing extractor: subject_id
+2026-08-28 16:20:11 - WARNING - neuralset.extractors.base:824 - LabelEncoder has only found one label: {'default'}. This was probably not intended.
+16:20:11 WARNING neuralset.extractors.base: LabelEncoder has only found one label: {'default'}. This was probably not intended.
+[16:20:12 INFO] Building dataloader for split all
+16:20:12 INFO tribev2.main: Building dataloader for split all
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:624: UserWarning: This DataLoader will create 20 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+  0%|          | 0/1 [00:00<?, ?it/s]~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:20:16 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:20:19 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:20:23 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:20:27 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:20:31 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:20:35 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:20:38 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:20:42 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:20:46 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:20:49 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:20:53 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:20:56 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:21:00 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:21:03 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:21:06 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:21:10 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:21:14 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:21:17 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:21:21 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:21:24 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+100%|██████████| 1/1 [01:13<00:00, 73.75s/it]100%|██████████| 1/1 [01:27<00:00, 87.87s/it]
+INFO - Predicted 20 / 100 segments (20.0% kept)
+16:21:39 INFO tribev2.demo_utils: Predicted 20 / 100 segments (20.0% kept)
+16:21:39 INFO exp2-neutral: Inference done in 224.8s — predictions (20, 20484)
+16:21:39 INFO exp2-neutral: Saved outputs to ~/Documents/Projects/tribe-fmri-fnirs/exp2/output/bumboTarol
+16:21:39 INFO exp2-neutral: === TRIBE on bumbo_neutral.mp4 ===
+Extract audio from video events:   0%|          | 0/1 [00:00<?, ?it/s]                                                                      Extract audio from video events:   0%|          | 0/1 [00:00<?, ?it/s]MoviePy - Writing audio in ~/Documents/Projects/tribe-fmri-fnirs/exp2/stimulus/bumbo_neutral.wav
+
+chunk:   0%|          | 0/392 [00:00<?, ?it/s, now=None][A
+                                                        [A                                                                      Extract audio from video events:   0%|          | 0/1 [00:00<?, ?it/s]Extract audio from video events: 100%|██████████| 1/1 [00:00<00:00,  9.85it/s]Extract audio from video events: 100%|██████████| 1/1 [00:00<00:00,  9.84it/s]
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/events/utils.py:134: UserWarning: The events dataframe contains an `Index` column. This is dangerous, please add drop=True in calls to df.reset_index(). Dropping it automatically.
+  warnings.warn(msg)
+16:21:40 INFO exp2-neutral: Events built (2 rows)
+[16:21:40 WARNING] Removing extractor text as there are no corresponding events
+16:21:40 WARNING tribev2.main: Removing extractor text as there are no corresponding events
+[16:21:40 INFO] Preparing extractor: audio
+16:21:40 INFO tribev2.main: Preparing extractor: audio
+16:21:40 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+16:21:40 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/w2v-bert-2.0/da985ba0987f70aaeb84a80f2851cfac8c697a7b/config.json "HTTP/1.1 200 OK"
+16:21:40 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/w2v-bert-2.0/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+MoviePy - Done.
+Loading weights:   0%|          | 0/773 [00:00<?, ?it/s]Loading weights: 100%|██████████| 773/773 [00:00<00:00, 9169.32it/s]
+[16:21:51 INFO] Preparing extractor: video
+16:21:51 INFO tribev2.main: Preparing extractor: video
+16:21:52 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+16:21:52 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/vjepa2-vitg-fpc64-256/875c192b7b704b87d1e1d99345769632dd5f739a/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/843 [00:00<?, ?it/s]Loading weights:   3%|▎         | 28/843 [00:00<00:04, 176.46it/s]Loading weights:   7%|▋         | 60/843 [00:00<00:04, 190.85it/s]Loading weights:  11%|█         | 92/843 [00:00<00:03, 213.77it/s]Loading weights:  15%|█▍        | 124/843 [00:00<00:03, 218.70it/s]Loading weights:  19%|█▊        | 156/843 [00:00<00:03, 220.16it/s]Loading weights:  21%|██        | 179/843 [00:00<00:03, 213.33it/s]Loading weights:  24%|██▍       | 201/843 [00:01<00:03, 165.05it/s]Loading weights:  26%|██▌       | 219/843 [00:01<00:04, 136.99it/s]Loading weights:  28%|██▊       | 238/843 [00:01<00:04, 144.63it/s]Loading weights:  32%|███▏      | 270/843 [00:01<00:03, 180.36it/s]Loading weights:  36%|███▌      | 302/843 [00:01<00:02, 207.56it/s]Loading weights:  40%|███▉      | 334/843 [00:01<00:02, 229.54it/s]Loading weights:  43%|████▎     | 366/843 [00:01<00:01, 244.10it/s]Loading weights:  47%|████▋     | 398/843 [00:01<00:01, 253.95it/s]Loading weights:  51%|█████     | 428/843 [00:02<00:01, 262.80it/s]Loading weights:  54%|█████▍    | 455/843 [00:02<00:03, 119.59it/s]Loading weights:  56%|█████▋    | 476/843 [00:02<00:03, 101.35it/s]Loading weights:  58%|█████▊    | 493/843 [00:03<00:03, 99.55it/s] Loading weights:  60%|██████    | 508/843 [00:03<00:03, 95.75it/s]Loading weights:  62%|██████▏   | 524/843 [00:03<00:03, 92.58it/s]Loading weights:  64%|██████▍   | 540/843 [00:03<00:03, 88.66it/s]Loading weights:  66%|██████▌   | 556/843 [00:03<00:03, 88.64it/s]Loading weights:  68%|██████▊   | 572/843 [00:03<00:02, 92.75it/s]Loading weights:  70%|██████▉   | 588/843 [00:04<00:02, 91.83it/s]Loading weights:  72%|███████▏  | 604/843 [00:04<00:02, 89.21it/s]Loading weights:  74%|███████▎  | 620/843 [00:04<00:02, 90.41it/s]Loading weights:  75%|███████▌  | 636/843 [00:04<00:02, 92.87it/s]Loading weights:  97%|█████████▋| 819/843 [00:04<00:00, 432.27it/s]Loading weights: 100%|██████████| 843/843 [00:04<00:00, 175.34it/s]
+16:21:57 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+16:21:57 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+16:21:57 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/vjepa2-vitg-fpc64-256/875c192b7b704b87d1e1d99345769632dd5f739a/video_preprocessor_config.json "HTTP/1.1 200 OK"
+16:21:57 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+16:21:57 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+16:21:57 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+16:21:58 INFO httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/vjepa2-vitg-fpc64-256/875c192b7b704b87d1e1d99345769632dd5f739a/video_preprocessor_config.json "HTTP/1.1 200 OK"
+16:21:58 INFO httpx: HTTP Request: HEAD https://huggingface.co/facebook/vjepa2-vitg-fpc64-256/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-08-28 16:21:59 - DEBUG - neuralset.extractors.video:277 - Loaded Video (duration 17.76s at 25.0fps, shape (320, 240)):
+~/Documents/Projects/tribe-fmri-fnirs/exp2/stimulus/bumbo_neutral.mp4
+16:21:59 DEBUG neuralset.extractors.video: Loaded Video (duration 17.76s at 25.0fps, shape (320, 240)):
+~/Documents/Projects/tribe-fmri-fnirs/exp2/stimulus/bumbo_neutral.mp4
+Encoding video:   0%|          | 0/36 [00:00<?, ?it/s]2026-08-28 16:22:04 - DEBUG - neuralset.extractors.video:311 - Created Tensor with size (36, 20, 1408)
+16:22:04 DEBUG neuralset.extractors.video: Created Tensor with size (36, 20, 1408)
+Encoding video:   3%|▎         | 1/36 [00:05<03:03,  5.25s/it]Encoding video:   6%|▌         | 2/36 [00:08<02:13,  3.93s/it]Encoding video:   8%|▊         | 3/36 [00:11<02:05,  3.79s/it]Encoding video:  11%|█         | 4/36 [00:15<01:54,  3.59s/it]Encoding video:  14%|█▍        | 5/36 [00:18<01:49,  3.52s/it]Encoding video:  17%|█▋        | 6/36 [00:21<01:44,  3.47s/it]Encoding video:  19%|█▉        | 7/36 [00:25<01:41,  3.49s/it]Encoding video:  22%|██▏       | 8/36 [00:29<01:38,  3.52s/it]Encoding video:  25%|██▌       | 9/36 [00:32<01:36,  3.56s/it]Encoding video:  28%|██▊       | 10/36 [00:36<01:34,  3.64s/it]Encoding video:  31%|███       | 11/36 [00:40<01:32,  3.69s/it]Encoding video:  33%|███▎      | 12/36 [00:44<01:29,  3.74s/it]Encoding video:  36%|███▌      | 13/36 [00:48<01:26,  3.77s/it]Encoding video:  39%|███▉      | 14/36 [00:51<01:24,  3.83s/it]Encoding video:  42%|████▏     | 15/36 [00:56<01:21,  3.90s/it]Encoding video:  44%|████▍     | 16/36 [01:00<01:23,  4.19s/it]Encoding video:  47%|████▋     | 17/36 [01:05<01:22,  4.32s/it]Encoding video:  50%|█████     | 18/36 [01:10<01:20,  4.47s/it]Encoding video:  53%|█████▎    | 19/36 [01:14<01:14,  4.40s/it]Encoding video:  56%|█████▌    | 20/36 [01:18<01:10,  4.39s/it]Encoding video:  58%|█████▊    | 21/36 [01:23<01:05,  4.39s/it]Encoding video:  61%|██████    | 22/36 [01:27<01:01,  4.40s/it]Encoding video:  64%|██████▍   | 23/36 [01:32<00:58,  4.50s/it]Encoding video:  67%|██████▋   | 24/36 [01:37<00:54,  4.52s/it]Encoding video:  69%|██████▉   | 25/36 [01:41<00:50,  4.56s/it]Encoding video:  72%|███████▏  | 26/36 [01:46<00:45,  4.57s/it]Encoding video:  75%|███████▌  | 27/36 [01:50<00:40,  4.54s/it]Encoding video:  78%|███████▊  | 28/36 [01:54<00:35,  4.43s/it]Encoding video:  81%|████████  | 29/36 [01:59<00:31,  4.44s/it]Encoding video:  83%|████████▎ | 30/36 [02:04<00:27,  4.53s/it]Encoding video:  86%|████████▌ | 31/36 [02:08<00:22,  4.46s/it]Encoding video:  89%|████████▉ | 32/36 [02:12<00:17,  4.43s/it]Encoding video:  92%|█████████▏| 33/36 [02:17<00:13,  4.45s/it]Encoding video:  94%|█████████▍| 34/36 [02:21<00:08,  4.41s/it]Encoding video:  97%|█████████▋| 35/36 [02:25<00:04,  4.38s/it]Encoding video: 100%|██████████| 36/36 [02:30<00:00,  4.35s/it]Encoding video: 100%|██████████| 36/36 [02:30<00:00,  4.17s/it]
+[16:24:30 INFO] Preparing extractor: subject_id
+16:24:30 INFO tribev2.main: Preparing extractor: subject_id
+2026-08-28 16:24:30 - WARNING - neuralset.extractors.base:824 - LabelEncoder has only found one label: {'default'}. This was probably not intended.
+16:24:30 WARNING neuralset.extractors.base: LabelEncoder has only found one label: {'default'}. This was probably not intended.
+[16:24:30 INFO] Building dataloader for split all
+16:24:30 INFO tribev2.main: Building dataloader for split all
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:624: UserWarning: This DataLoader will create 20 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+  0%|          | 0/1 [00:00<?, ?it/s]~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:24:34 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:24:37 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:24:41 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:24:45 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:24:48 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:24:52 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:24:56 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:24:59 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:25:02 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:25:06 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:25:09 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:25:12 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:25:16 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:25:20 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:25:23 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:25:26 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:25:30 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:25:33 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:25:36 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+~/Documents/Projects/tribe-fmri-fnirs/.venv/lib/python3.12/site-packages/neuralset/extractors/base.py:707: UserWarning: LabelEncoder: event_types has not been set, are you sure you want to apply this extractor to all events?
+  warnings.warn(
+2026-08-28 16:25:40 - WARNING - neuralset.extractors.base:798 - Missing events will be encoded using the default all-zero value (for example, 0 or a zero vector/tensor), which may be indistinguishable from a valid class if that class is also mapped to zeros. Set treat_missing_as_separate_class=True to avoid this.
+[exp2-neutral] Patched AutoModel.from_pretrained: torch_dtype=torch.float16 on MPS=True
+100%|██████████| 1/1 [01:10<00:00, 70.68s/it]100%|██████████| 1/1 [01:32<00:00, 92.81s/it]
+INFO - Predicted 18 / 100 segments (18.0% kept)
+16:26:03 INFO tribev2.demo_utils: Predicted 18 / 100 segments (18.0% kept)
+16:26:03 INFO exp2-neutral: Inference done in 263.0s — predictions (18, 20484)
+16:26:03 INFO exp2-neutral: Saved outputs to ~/Documents/Projects/tribe-fmri-fnirs/exp2/output/bumbo
+16:26:03 INFO exp2-neutral: All done in 490.1s

@@ -16,11 +16,10 @@ wheels/
 
 # TRIBE v2 feature cache (regenerable internal pickle format, large)
 cache/
-stimulus/*.wav
-stimulus/*.tsv
 
-# Stimulus video IS committed (50MB, under GitHub limit)
-# stimulus/*.mp4 intentionally tracked
+# Derived audio (extracted from .mp4 by moviepy — regenerable)
+stimulus/*.wav
+exp2/stimulus/*.wav
 
 # OS / editor
 .DS_Store

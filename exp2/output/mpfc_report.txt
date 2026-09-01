@@ -1,0 +1,40 @@
+mPFC HYPOTHESIS REPORT — stimulus_2 (bumbo vs bumboTarol)
+============================================================
+
+Stimulus A: bumbo  preds (16, 20484)
+Stimulus B: bumboTarol  preds (17, 20484)
+
+Top-1 ROI: 7Networks_RH_Vis_2 (network=Vis)
+Default-network ROIs in top-10: 6
+Default-network ROIs in top-20: 10
+Default-network mean rank: 62.0 / 201 (median 52)
+mPFC diff-mass fraction: 0.051 (share 0.059, enrichment 0.86x)
+Mean |diff| in mPFC:  0.01581
+Mean |diff| out mPFC: 0.01846
+Ratio in/out: 0.86
+
+VERDICT: does NOT support the mPFC hypothesis
+   - 6 Default-network ROIs in the top-10
+
+Top-20 ROIs by |mean difference|:
+ rank  roi                                  name     network  n_vertices  mean_abs_diff  mean_signed_diff_bumbo_minus_tarol
+    1  102                    7Networks_RH_Vis_2         Vis         103       0.063813                           -0.058742
+    2    1                    7Networks_LH_Vis_1         Vis         124       0.051343                           -0.047374
+    3  100            7Networks_LH_Default_PHC_1     Default          80       0.043248                           -0.039381
+    4  103                    7Networks_RH_Vis_3         Vis         153       0.042695                           -0.038086
+    5  189           7Networks_RH_Default_Temp_5     Default          76       0.042037                            0.036588
+    6   80            7Networks_LH_Default_Par_2     Default          88       0.038824                           -0.013085
+    7  115                   7Networks_RH_Vis_15         Vis          70       0.038655                           -0.033074
+    8   96        7Networks_LH_Default_pCunPCC_1     Default          80       0.038422                           -0.030909
+    9   78           7Networks_LH_Default_Temp_5     Default         140       0.037601                            0.028575
+   10  190           7Networks_RH_Default_PFCv_1     Default         101       0.037162                            0.029896
+   11   77           7Networks_LH_Default_Temp_4     Default         108       0.036291                            0.022410
+   12  198        7Networks_RH_Default_pCunPCC_1     Default          30       0.035703                           -0.032247
+   13  187           7Networks_RH_Default_Temp_3     Default          88       0.035471                            0.030856
+   14  148 7Networks_RH_SalVentAttn_TempOccPar_1 SalVentAttn          75       0.034502                            0.031541
+   15    2                    7Networks_LH_Vis_2         Vis         147       0.033071                           -0.025694
+   16  181             7Networks_RH_Cont_PFCmp_2        Cont          83       0.032665                            0.024582
+   17  111                   7Networks_RH_Vis_11         Vis          87       0.031982                           -0.026158
+   18  136          7Networks_RH_DorsAttn_Post_2    DorsAttn         132       0.031317                            0.025706
+   19   79            7Networks_LH_Default_Par_1     Default          85       0.029712                            0.017936
+   20  116                 7Networks_RH_SomMot_1      SomMot          63       0.029338                           -0.015022

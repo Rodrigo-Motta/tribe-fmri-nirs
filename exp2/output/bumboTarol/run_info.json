@@ -1,0 +1,11 @@
+{
+  "stimulus": "~/Documents/Projects/tribe-fmri-fnirs/exp2/stimulus/bumboTarol_neutral.mp4",
+  "stimulus_type": "neutral_grey_video + percussion_audio",
+  "model": "facebook/tribev2",
+  "n_timesteps": 20,
+  "n_vertices": 20484,
+  "TR_s": 1.0,
+  "hemodynamic_lag_s": 5,
+  "mesh": "fsaverage5",
+  "video_pathway": "active (constant grey frames)"
+}
